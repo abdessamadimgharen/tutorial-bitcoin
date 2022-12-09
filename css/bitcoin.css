@@ -1,0 +1,303 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --main-color: #0d40c6;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.bitcoin {
+    width: 100%;
+    height: 100vh;
+}
+.bitcoin .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bitcoin .content .icons {
+    width: 3%;
+    background-color: var(--main-color);
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-flow: wrap column;
+    align-content: center;
+    padding-top: 80px;
+    cursor: pointer;
+}
+.bitcoin .content .icons i{
+    margin-top: 30px;
+    font-size: 14px;
+}
+.bitcoin .content .icons i:nth-child(2) {
+    position: relative;
+}
+.bitcoin .content .icons i:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.128);
+    border-radius: 4px;
+}
+/* Start dashboard  */
+.bitcoin  .dashboard {
+    width:94%;
+    height: 100vh;
+    padding: 10px 30px;
+}
+/* Start header */
+.bitcoin .dashboard .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    margin-right: 40px;
+}
+.bitcoin .dashboard .header .logo {
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+.bitcoin .dashboard .header .name {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.bitcoin .dashboard .header .name .user  {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bitcoin .dashboard .header .name .user i {
+    font-size: 30px;
+    color: var(--main-color);
+}
+.bitcoin .dashboard .header .name .user span {
+    color: #8b9ebb;
+    cursor: pointer;
+}
+.bitcoin .dashboard .header .name .user span::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f107';
+    font-weight: 900;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.bitcoin .dashboard .header .name .count {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+}
+.bitcoin .dashboard .header .name .count span:first-child {
+    color: #0f46d2;
+}
+
+.bitcoin .content hr {
+    opacity: 0.3;
+}
+.bitcoin .content .welcome {
+    font-size: 14px;
+}
+.bitcoin .content .welcome span {
+    color: var(--main-color);
+    font-weight: bold;
+}
+.bitcoin .content .welcome p:not(span) {
+    color: #777;
+    font-weight: 600;
+}
+/* End header */
+/* Start Center */
+.bitcoin .center-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    gap: 40px;
+}
+/* Start left */
+.bitcoin .center-content .left {
+    padding: 10px;
+    width: 40%;
+}
+.bitcoin .center-content .left .button {
+    text-align: center;
+}
+.bitcoin .center-content .left .button button {
+    width: 45%;
+    padding: 10px 25px;
+    margin-left: 10px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.bitcoin .center-content .left .button button:first-child {
+    background-color: var(--main-color);
+    color: white;
+}
+.bitcoin .center-content .left .button button:last-child {
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid #f6f6f6;
+}
+.bitcoin .center-content .left label {
+    padding-top: 20px;
+    display: block;
+}
+.bitcoin .center-content .left .betc {
+    width: 100%;
+    background-color: #f2f6fe;
+    padding: 10px 15px;
+    margin-top: 15px;
+    display: flex;
+    border-radius: 3px;
+}
+.bitcoin .center-content .left .betc span {
+    width: 50%;
+    color: #62769d;
+}
+.bitcoin .center-content .left .betc span:first-child {
+    position: relative;
+}
+.bitcoin .center-content .left .betc span.arrow::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f107';
+    font-weight: 900;
+    font-size: 12px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bitcoin .center-content .left div.betc:nth-child(7) span {
+    opacity: .6;
+}
+.bitcoin .center-content .floor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+.bitcoin .center-content .floor p:first-child {
+    color: #62769d;
+}
+.bitcoin .center-content button:last-of-type {
+    width: 100%;
+    background-color: #10d876;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 9px 0 ;
+    margin-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.bitcoin .center-content .foot {
+    margin-top: 60px;
+}
+.bitcoin .center-content .foot  p {
+    font-size: 13px;
+    color: #62769d;
+    line-height: 1.6;
+}
+/* End left */
+/* Start Right */
+.bitcoin .center-content  .right {
+    padding: 20px;
+    width: 60%;
+}
+.bitcoin .center-content  .right .profil {
+    display: flex;
+    justify-content: space-between;
+}
+/* Start buyer */
+.bitcoin .center-content  .right .profil .buyer .eman {
+    display: flex;
+    align-items: center;
+}
+.bitcoin .center-content  .right .profil  .buyer .eman i{
+    font-size: 30px;
+}
+.bitcoin .center-content  .right .profil  .buyer .eman .span {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.bitcoin .center-content  .right .profil  .buyer .email {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.bitcoin .center-content  .right .profil .email a {
+    text-decoration: none;
+    font-size: 13px;
+}  
+/* End buyer */
+/* Start seller */
+.bitcoin .center-content  .right .profil .seller .lmilan {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.bitcoin .center-content  .right .profil  .seller .lmilan i{
+    font-size: 30px;
+}
+.bitcoin .center-content  .right .profil  .seller .lmilan .span {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.bitcoin .center-content  .right .profil  .seller .email {
+    margin-right: 30px;
+    margin-top: 10px;
+}
+/* End seller */
+/* End right */
+/* Start table */
+.bitcoin .center-content .table {
+    padding-top: 15px;
+}
+.bitcoin .center-content .table .row {
+    width: 100%;
+    background-color: #f2f6fe;
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+    border-radius: 3px;
+}
+.bitcoin .center-content .table .row span {
+    width: 50%;
+    color: #62769d;
+    font-size: 15px;
+}
+.bitcoin .center-content .table .row:first-child span {
+    color: #366af2;
+}
+.bitcoin .center-content .table .row:nth-last-child(2) span:last-child {
+    color: #fe8498;
+}
+/* End table */
+/* End Center */
+/* End dashboard  */
